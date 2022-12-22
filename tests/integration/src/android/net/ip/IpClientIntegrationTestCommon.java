@@ -186,7 +186,6 @@ import com.android.testutils.TapPacketReader;
 
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestName;
@@ -3792,7 +3791,6 @@ public abstract class IpClientIntegrationTestCommon {
         verify(mCb, timeout(TEST_TIMEOUT_MS)).setNeighborDiscoveryOffload(true);
     }
 
-    @Ignore("TODO: temporarily ignore tests until prebuilts are updated")
     @Test @SignatureRequiredTest(reason = "requires mock callback object")
     public void testNetlinkSocketReceiveENOBUFS() throws Exception {
         if (!mIsNetlinkEventParseEnabled) return;
